@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyTrip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>✈️ SkyTrip</h1>
+        <p class="subtitle">Smart Weather & Travel Planner</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name"
+            >
+
+            <button onclick="checkWeather()">
+                Search
+            </button>
+        </div>
+
+        <p id="error"></p>
+
+        <div id="weatherCard" class="weather-card">
+
+            <h2 id="cityName">Chennai</h2>
+
+            <div class="weather-icon" id="weatherIcon">
+                ☀️
+            </div>
+
+            <h3 id="temperature">32°C</h3>
+
+            <p id="condition">
+                Sunny
+            </p>
+
+            <div class="details">
+
+                <div>
+                    💧
+                    <span id="humidity">65%</span>
+                    <small>Humidity</small>
+                </div>
+
+                <div>
+                    💨
+                    <span id="wind">12 km/h</span>
+                    <small>Wind</small>
+                </div>
+
+                <div>
+                    🌡️
+                    <span id="feels">35°C</span>
+                    <small>Feels Like</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="score-card">
+
+            <h2>🎯 Travel Score</h2>
+
+            <div class="score" id="score">
+                90/100
+            </div>
+
+            <p id="advice">
+                Excellent day for travelling!
+            </p>
+
+        </div>
+
+
+        <div class="activities">
+
+            <h2>🌴 Recommended Activities</h2>
+
+            <div class="activity-container">
+
+                <div>
+                    🏖️
+                    <p>Beach</p>
+                    <b id="beach">Excellent</b>
+                </div>
+
+                <div>
+                    📸
+                    <p>Photography</p>
+                    <b id="photo">Excellent</b>
+                </div>
+
+                <div>
+                    🚶
+                    <p>Outdoor</p>
+                    <b id="outdoor">Good</b>
+                </div>
+
+                <div>
+                    🏛️
+                    <p>Sightseeing</p>
+                    <b id="sightseeing">Good</b>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="packing">
+
+            <h2>🎒 Smart Packing List</h2>
+
+            <div id="packingList">
+
+                <span>🕶️ Sunglasses</span>
+                <span>💧 Water Bottle</span>
+                <span>🧴 Sunscreen</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
